@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './views/navbar.dart';
+import './views/collapsiblebar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,17 +30,17 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavBar(),
+      drawer: const NavBar(),
       appBar: AppBar(
         title: const Text('SideBar'),
         centerTitle: true,
       ),
-      body: Center(
-      ),
+      body: const Center(),
     );
+
+    // CollapsPage();
   }
 }
